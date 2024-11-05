@@ -1,0 +1,19 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { UsersComponent } from './users/users.component';
+import { ListComponent } from './list/list.component';
+import {UsersRoutingModule} from './users-routing.module';
+
+
+
+@NgModule({
+  declarations: [
+    UsersComponent,
+    ListComponent
+  ],
+  imports: [
+    CommonModule,
+    UsersRoutingModule
+  ]
+})
+export class UsersModule { }
