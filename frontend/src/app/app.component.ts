@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {AuthService} from './core/services/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'frontend';
+  constructor(private authService: AuthService) {}
+
+  ngOnInit(): void {
+    this.authService.redirectToUsersIfLoggedIn();
+  }
 }

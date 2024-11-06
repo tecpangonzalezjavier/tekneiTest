@@ -1,0 +1,22 @@
+.footer {
+  width: 100%;
+  display: flex;
+  column-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer div {
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+app-clock {
+  color: #ff4081;
+  font-weight: bold;
+}

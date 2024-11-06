@@ -1,1 +1,10 @@
-<p>header works!</p>
+<mat-toolbar>
+  <span>{{title}}</span>
+  <span class="example-spacer"></span>
+  <div *ngIf="isLoggedIn">
+    <button mat-button mat-raised-button (click)="logout()">Cerrar sesion</button>
+  </div>
+  <div class="header-logo-container">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJc6gO5aemfjSj32lzwQqeoa7nztsXJGgvPQ&s" alt="Logo" class="header-logo" />
+  </div>
+</mat-toolbar>
